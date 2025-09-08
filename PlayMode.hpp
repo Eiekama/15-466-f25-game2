@@ -4,6 +4,7 @@
 
 #include <glm/glm.hpp>
 
+#include <random>
 #include <vector>
 #include <deque>
 
@@ -27,15 +28,20 @@ struct PlayMode : Mode {
 	//local copy of the game scene (so code can change it during gameplay):
 	Scene scene;
 
-	//hexapod leg to wobble:
-	Scene::Transform *hip = nullptr;
-	Scene::Transform *upper_leg = nullptr;
-	Scene::Transform *lower_leg = nullptr;
-	glm::quat hip_base_rotation;
-	glm::quat upper_leg_base_rotation;
-	glm::quat lower_leg_base_rotation;
-	float wobble = 0.0f;
+	bool game_over = false;
+
+	Scene::Transform *player;
+	glm::vec3 start_pos;
+	bool jump = false;
+	float jump_cooldown = 0.7;
+	float jump_timer = 0;
+	float jump_fn(float t);
 	
+	float spawn_timer = 3;
+
+	bool random_bool();
+	float random_float(float low, float high);
+
 	//camera:
 	Scene::Camera *camera = nullptr;
 
