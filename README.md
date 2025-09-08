@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Magical Girl Dash Dash
 
-Author: (TODO: your name)
+Author: Jingxuan Chen
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: The game is basically Dino Run, but some obstacles require you to shoot projectiles to clear
 
 Screen Shot:
 
@@ -10,6 +10,10 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+W to Jump
+
+D to Shoot
+
+On game over, Left Mouse Button to Restart
 
 This game was built with [NEST](NEST.md).
