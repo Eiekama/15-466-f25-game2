@@ -5,7 +5,6 @@
 #include "DrawLines.hpp"
 #include "Mesh.hpp"
 #include "Load.hpp"
-// #include "GameObject.hpp"
 #include "gl_errors.hpp"
 #include "data_path.hpp"
 
